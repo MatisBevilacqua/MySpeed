@@ -112,7 +112,7 @@ class __TwigTemplate_bb599c848b84b91880449b3f8efb7790 extends Template
         echo "    <main>
         <h2>Bienvenue, ";
         // line 11
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "user", [], "any", false, false, false, 11), "email", [], "any", false, false, false, 11), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "user", [], "any", false, false, false, 11), "name", [], "any", false, false, false, 11), "html", null, true);
         echo "</h2>
     </main>
 ";
@@ -151,7 +151,7 @@ class __TwigTemplate_bb599c848b84b91880449b3f8efb7790 extends Template
 
 {% block body %}
     <main>
-        <h2>Bienvenue, {{ app.user.email }}</h2>
+        <h2>Bienvenue, {{ app.user.name }}</h2>
     </main>
 {% endblock %}
 ", "user/home/index.html.twig", "/Applications/MAMP/htdocs/mySpeed/templates/user/home/index.html.twig");

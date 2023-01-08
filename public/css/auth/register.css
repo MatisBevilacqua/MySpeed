@@ -6,12 +6,11 @@
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    color: #FFF;
 }
 
-button{
-    background: #184E77;
-    color: #FFF;
-    font-size: 19px;
+body{
+    background: #1B1D33;
 }
 
 h1{
@@ -26,7 +25,7 @@ a{
 }
 
 a{
-    color: #184E77;
+    color: #479468;
 }
 
 label{
@@ -47,10 +46,16 @@ input{
     padding-left: 4vw;
     height: 55px;
     outline: none;
-    border: none;
-    background:#F6F6F6;
+    border-radius: 3px;
     margin-bottom: 4vh;
     font-size: 16px;
+    color: #FFF;
+    background: #1B1D33;
+    border: 2px solid #479468;
+}
+
+input::placeholder{
+    color: #FFF;
 }
 
 button{
@@ -58,6 +63,10 @@ button{
     padding-left: 2vw;
     height: 55px;
     border: none;
+    border-radius: 3px;
+    background: #479468;
+    color: #FFF;
+    font-size: 19px;
 }
 
 form{

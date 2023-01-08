@@ -118,12 +118,12 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
                 <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
             </section>
             <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"";
+            <input placeholder=\"Adresse email\" type=\"email\" value=\"";
         // line 27
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 27, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
             <label for=\"inputPassword\">Password</label>
-            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
+            <input placeholder=\"Mot de passe\" type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
 
             <input type=\"hidden\" name=\"_csrf_token\"
                    value=\"";
@@ -187,9 +187,9 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
                 <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
             </section>
             <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
+            <input placeholder=\"Adresse email\" type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
             <label for=\"inputPassword\">Password</label>
-            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
+            <input placeholder=\"Mot de passe\" type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
 
             <input type=\"hidden\" name=\"_csrf_token\"
                    value=\"{{ csrf_token('authenticate') }}\"
