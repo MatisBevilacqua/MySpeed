@@ -61,7 +61,7 @@ button{
 }
 
 form{
-    gap: 40px;
+    padding-top: 10vh;
 }
 
 #connexion_contents{

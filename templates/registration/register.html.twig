@@ -12,6 +12,7 @@
             <p>Vous avez déja un compte ? <a href="/login">Se connecter</a></p>
         </section>
         {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.pseudo, { 'attr': { 'placeholder': 'Pseudo'} }) }}
         {{ form_row(registrationForm.email, { 'attr': { 'placeholder': 'Adresse email'} }) }}
         {{ form_row(registrationForm.age, { 'attr': { 'placeholder': 'Age'} }) }}
         {{ form_row(registrationForm.idx, { 'attr': { 'placeholder': 'Index'} }) }}

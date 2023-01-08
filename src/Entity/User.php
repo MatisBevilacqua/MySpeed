@@ -31,6 +31,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?int $idx = null;
 
     #[ORM\Column]
+    private ?string $pseudo = null;
+
+    #[ORM\Column]
     private ?int $age = null;
 
     public function getId(): ?int
@@ -50,6 +53,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
+    public function getPseudo(): ?string
+    {
+        return $this->pseudo;
+    }
+
+    public function setPseudo(string $pseudo): self
+    {
+        $this->pseudo = $pseudo;
+        return $this;
+    }
     /**
      * A visual identifier that represents this user.
      *
