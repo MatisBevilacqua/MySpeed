@@ -66,7 +66,7 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Log in!";
+        echo "Connexion";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -110,14 +110,14 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
 
         // line 9
         echo "    <main>
+        <section id=\"connexion_contents\">
+            <h1>Connexion</h1>
+            <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
+        </section>
         <form method=\"post\">
            ";
-        // line 22
-        echo "            <section id=\"connexion_contents\">
-                <h1>Connexion</h1>
-                <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
-            </section>
-            <label for=\"inputEmail\">Email</label>
+        // line 26
+        echo "            <label for=\"inputEmail\">Email</label>
             <input placeholder=\"Adresse email\" type=\"email\" value=\"";
         // line 27
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 27, $this->source); })()), "html", null, true);
@@ -156,20 +156,24 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
 
     public function getDebugInfo()
     {
-        return array (  131 => 32,  123 => 27,  116 => 22,  112 => 9,  102 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
+        return array (  131 => 32,  123 => 27,  120 => 26,  112 => 9,  102 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}Connexion{% endblock %}
 {% block stylesheets %}
     <link href=\"{{asset('css/auth/login.css') }}\" type=\"text/css\" rel=\"stylesheet\"/>
 {% endblock %}
 
 {% block body %}
     <main>
+        <section id=\"connexion_contents\">
+            <h1>Connexion</h1>
+            <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
+        </section>
         <form method=\"post\">
            {#
                {% if error %}
@@ -182,10 +186,6 @@ class __TwigTemplate_c5d7bdbb37b5ceeb95fd803262dd145f extends Template
                    </div>
                {% endif %}
            #}
-            <section id=\"connexion_contents\">
-                <h1>Connexion</h1>
-                <p>Vous n’avez pas de compte ? <a href=\"/register\">S’enregistrer</a></p>
-            </section>
             <label for=\"inputEmail\">Email</label>
             <input placeholder=\"Adresse email\" type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
             <label for=\"inputPassword\">Password</label>

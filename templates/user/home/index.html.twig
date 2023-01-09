@@ -1,6 +1,6 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Accueil{% endblock %}
 {% block stylesheets %}
     <link href="{{asset('css/user/home.css') }}" type="text/css" rel="stylesheet"/>
 {% endblock %}
@@ -10,4 +10,6 @@
     <main>
         <h2>Bienvenue, {{ app.user.name }}</h2>
     </main>
+
+    {# https://medium.com/@brookehamilton2/golf-booking-app-a-ux-ui-case-study-99a8a9ca0126 #}
 {% endblock %}
